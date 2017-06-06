@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+
+    <RelativeLayout
+        android:id="@+id/relaytive"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20px" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="HighScore" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:paddingTop="2px" >
+
+            <TextView
+                android:id="@+id/scrore_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Score"
+                android:textSize="10pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/scrore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scrore_text"
+                android:layout_centerInParent="true"
+                android:text="0"
+                android:textSize="15pt"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/logo" />
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:scrollingCache="false"
+        android:layout_weight="0.38"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:listSelector="@android:color/transparent"
+        android:background="@android:color/white">
+
+    </GridView>
+
+
+</LinearLayout>
