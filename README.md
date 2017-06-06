@@ -1,12 +1,8 @@
 # MemoryBoard_Gradle_Build
-[Game works as below and coded for below]
-The full game must fit exactly inside a device's available window area.
-The logo must be displayed in the top left of the window.
-The High Scores button must be visible to the top right of the window.
-Game logic for color selection and flipping back in wrong selection.
-The current score should be displayed in the top, centered between the logo and the
-High Score button.
-The game board must be displayed below the logo and high score button
-The user input may be implemented as a separate screen or as a popup
- The high scores table must be displayed as a proper table with three columns: Rank,Name, and Score
-High scores database is implemented using the device's internal database only. 
+Work Sample
+
+The goal of this work sample is to construct a sample memory game called ”Colour Memory”. The game board consists of a 4x4 grid with 8 pairs of color cards.
+ 
+The game starts initially with all cards facing down. The player is to then flip two cards each round, trying to find a match. If the flipped pair is a match, the player receives two (2) points, and the cards may be removed from the game board. Otherwise, the cards are turned facedown again and the player loses one (1) point. This continues until all pairs have been found.
+ 
+After the game is finished, the user should be prompted to input his name. The user's name and the score would then be stored in a database, and the user should be notified of his score and the current rankings
